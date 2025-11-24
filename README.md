@@ -12,38 +12,35 @@ This project investigates the global disparity between life expectancy (LE) and 
 2. Assess how inequality and social development influence this gap.
 3. Identify clusters of countries (“health gap archetypes”) using socioeconomic and health indicators.
 
-## 🧩 Methods
-- Data cleaning and merging with pandas.
-- Regression and moderation analysis (statsmodels / scikit-learn).
-- Clustering (k-means, hierarchical).
-- Visualization with matplotlib and seaborn.
 
 ## 📊 Repository Structure
 longevity-inequality-analysis/
-│
-├── data/
-│   ├── raw/                  # Raw CSVs (World Bank, IHME)
-│   ├── processed/            # Cleaned/merged datasets
-│   └── README.md             # Describe sources and variable details
-│
-├── notebooks/
-│   ├── 01_exploration.ipynb  # EDA, correlations, visualizations
-│   ├── 02_modeling.ipynb     # Regression and clustering analysis
-│   └── 03_results_figures.ipynb  # Final results and plots
-│
-├── src/
-│   ├── data_cleaning.py      # Cleaning and merging scripts
-│   ├── analysis_utils.py     # Helper functions (e.g. regression models)
-│   └── visualization.py      # Plot functions (maps, trends, clusters)
-│
+
+├── data
+
+    ├── raw/                  
+    ├── processed/            
+    └── README.md             
+├── notebooks
+
+    ├── 01_exploration.ipynb  
+    ├── 02_modeling.ipynb     
+    └── 03_results_figures.ipynb 
+├── src
+
+    ├── data_cleaning.py      
+    ├── analysis_utils.py     
+    └── visualization.py      
 ├── reports/
-│   ├── paper_draft.md        # Journal-style report draft
-│   ├── figures/              # Exported charts and maps
-│   └── tables/               # Summary tables
-│
-├── environment.yml or requirements.txt
+
+    ├── paper_draft.md        
+    ├── figures/             
+    └── tables/              
+├── requirements.txt
+
 ├── .gitignore
+
 ├── LICENSE
-├── README.md
-└── CITATION.cff (optional)
+
+└── README.md
 
